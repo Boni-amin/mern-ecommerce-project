@@ -16,6 +16,10 @@ import ComplainPage from './pages/complain-page';
 import LoginPage from './pages/login-page';
 import OtpPage from './pages/otp-page';
 import ProfilePage from './pages/profile-page';
+import WishPage from './pages/wish-page';
+import CartPage from "./pages/cart-page.jsx";
+import OrderPage from './pages/order-page.jsx';
+import InvoicePage from './pages/invoice-page.jsx';
 
 
 
@@ -41,6 +45,11 @@ const App = () => {
                 <Route path="/login" element={<LoginPage/>}/>
                 <Route path="/otp" element={<OtpPage/>}/>
                 <Route path="/profile" element={<ProfilePage/>}/>
+
+                <Route path="/wish" element={<WishPage/>}/>
+                <Route path="/cart" element={<CartPage/>}/>
+                <Route path="/orders" element={<OrderPage/>}/>
+                <Route path="/invoice/:id" element={<InvoicePage/>}/>
 
                 <Route path="*" element={<NotFoundPage/>}/>
             </Routes>
